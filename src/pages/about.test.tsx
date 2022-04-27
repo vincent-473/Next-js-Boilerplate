@@ -15,8 +15,8 @@ describe('About page', () => {
   it('should render the About page', () => {
     render(<About />);
 
-    const paragraph = screen.getAllByText(/Lorem ipsum/i);
+    const paragraph = screen.getAllByText(/Lorem ipsum/);
 
-    expect(paragraph.length).toEqual(2);
+    expect(paragraph).toHaveLength(2);
   });
 });
